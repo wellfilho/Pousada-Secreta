@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "SourceSansPro-regular";
+    src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+
+
+:root {
+    --corLogo: #0BB8C6;
+    --font: SourceSansPro-regular, Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #3d3d3d;
+
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+#topo {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.container-geral-topo {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0 40px 0 0;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.link-menu {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 18px;
+    padding: 0px 15px 10px 15px;
+    color: #3d3d3d;
+}
+
+span {
+    color: #6592c9;
+}
+
+.link-menu:hover {
+    border-bottom: 3px solid #0BB8C6;
+    transition: 100ms;
+}
+
+.container-principal {
+    background-image: url(../imagens/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-textos-principais {
+    background-color: rgba(53, 53, 53, 0.514);
+    /*backdrop-filter: blur(3px);*/
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.titulo-principal {
+    
+    color: white;
+    font-size: 45px;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.570);
+}
+
+.subtitulo-principal {
+    
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.570);
+}
+
+.container-apresentacao {
+    padding-top: 60px;
+    text-align: center;
+    
+    padding-bottom: 10px;
+}
+
+.titulo-apresentacao {
+    text-transform: uppercase;
+    padding: 0px 0px 15px;
+}
+
+.subtitulo-apresentacao {
+    padding: 10px 0px 10px;
+}
+
+.secao-quartos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.secao-quartos img {
+    width: 400px;
+    height: auto;
+}
+
+.secao-quartos p {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 2px solid #0BB8C6;
+    text-align: center;
+} 
+
+.secao-quartos a {
+    padding: 20px 0px;
+}
+
+#container-rota {
+    padding-top: 60px;
+    text-align: center;
+    
+    padding-bottom: 10px;
+}
+
+.titulo-rota {
+    text-transform: uppercase;
+    padding: 0px 0px 15px;
+}
+
+.subtitulo-rota {
+    padding: 10px 0px 10px;
+}
+
+.container-iframe .iframe {
+    width: 100%;
+}
+
+#container-sobre {
+    padding-top: 60px;
+    text-align: center;
+    
+    padding-bottom: 10px;
+}
+
+.titulo-sobre {
+    text-transform: uppercase;
+    padding: 0px 0px 15px;
+}
+
+.subtitulo-sobre {
+    padding: 10px 0px 10px;
+}
+
+.container-sobre-itens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+.container-sobre-itens > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 150px;
+    padding: 0px 10px 30px;
+}
+
+.container-sobre-itens > div > img {
+    width: 110px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-textos h3 {
+    padding: 15px 0px;
+}
+
+.container-textos h3, p {
+    padding-left: 10px;
+}
+
+#rodape {
+    background-color: #49997C;
+    height: auto;
+}
+
+.container-contato {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #35705a;
+}
+
+.container-contato div img, a img {
+    width: 40px;
+    height: 40px;
+}
+
+.container-titulo-contato {
+    text-align: left;
+    width: 160px;
+}
+.titulo-contanto {
+    font-size: 18px;
+}
+
+.titulo-contanto, .texto-endereco, .texto-telefone, .texto-reserva {
+    color: white;
+}
+
+.link-endereco, .telefone, .link-reserva {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 55px;
+    width: 220px;
+}
+
+.container-texto-copyright {
+    padding: 15px;
+    text-align: center;
+}
+
+.texto-copyright {
+    color: white;
+}
+
+/* Seção dos Quartos */
+ 
+ .container-img-fundo {
+     background-image: url(../imagens/img-fundo.jpg);
+     height: 30vh;
+     background-size: cover;
+ }
+ .container-img-quartos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+ }
+
+ .container-img-quartos img {
+    padding-bottom: 10px;
+    object-fit: cover;
+    width: 420px;
+    height: 300px;
+}
+
+.container-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 80px;
+}
+
+ .container-informacoes ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul li {
+    width: 25%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+  /*Quarto solteiro*/
+ #quarto-solteiro {
+     padding-top: 60px;
+     text-align: center;
+     padding-bottom: 10px;
+ }
+ 
+ .titulo-quarto-solteiro {
+     text-transform: uppercase;
+     padding: 0px 0px 15px;
+ }
+ 
+ .subtitulo-quarto-solteiro {
+     padding: 10px 0px 10px;
+ }
+
+ /*Quarto casal*/
+ #quarto-casal {
+     padding-top: 60px;
+     text-align: center;
+     padding-bottom: 10px;
+ }
+ 
+ .titulo-quarto-casal {
+     text-transform: uppercase;
+     padding: 0px 0px 15px;
+ }
+ 
+ .subtitulo-quarto-casal {
+     padding: 10px 0px 10px;
+ }
+ 
+
+ /*Quarto família*/
+ #quarto-familia {
+     padding-top: 60px;
+     text-align: center;
+     padding-bottom: 10px;
+ }
+
+.titulo-quarto-familia {
+     text-transform: uppercase;
+     padding: 0px 0px 15px;
+ }
+ 
+.subtitulo-quarto-familia {
+     padding: 10px 0px 10px;
+}
+
